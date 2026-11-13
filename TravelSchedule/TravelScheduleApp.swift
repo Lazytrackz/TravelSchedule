@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//MARK: - TravelScheduleApp
+
 @main
 struct TravelScheduleApp: App {
     var body: some Scene {
