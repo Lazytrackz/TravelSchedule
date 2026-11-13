@@ -94,7 +94,7 @@ struct ContentView: View {
                 
                 let service = SearchService(
                     client: client,
-                    apikey: "d945c445-93b5-4f95-b47d-8a8f9a89a937"
+                    apikey: APIConstants.apikey
                 )
                 
                 print("Fetching search...")
@@ -119,7 +119,7 @@ struct ContentView: View {
                 )
                 let service = ScheduleService(
                     client: client,
-                    apikey: "d945c445-93b5-4f95-b47d-8a8f9a89a937"
+                    apikey: APIConstants.apikey
                 )
                 print("Fetching schedule...")
                 let schedule = try await service.getStationSchedule(station: "s9600213")
@@ -140,7 +140,7 @@ struct ContentView: View {
                 )
                 let service = ThreadService(
                     client: client,
-                    apikey: "d945c445-93b5-4f95-b47d-8a8f9a89a937"
+                    apikey: APIConstants.apikey
                 )
                 print("Fetching thread...")
                 let thread = try await service.getRouteStations(uid: "092S_13_2")
@@ -160,7 +160,7 @@ struct ContentView: View {
                 )
                 let service = NearestSettlementService(
                     client: client,
-                    apikey: "d945c445-93b5-4f95-b47d-8a8f9a89a937"
+                    apikey: APIConstants.apikey
                 )
                 print("Fetching settlements...")
                 let settlements = try await service.getNearestCity(
@@ -183,7 +183,7 @@ struct ContentView: View {
                 )
                 let service = CarrierService(
                     client: client,
-                    apikey: "d945c445-93b5-4f95-b47d-8a8f9a89a937"
+                    apikey: APIConstants.apikey
                 )
                 print("Fetching carrier...")
                 let carrier = try await service.getCarrierInfo(code: "680")
@@ -205,7 +205,7 @@ struct ContentView: View {
                 
                 let service = StationListService(
                     client: client,
-                    apikey: "d945c445-93b5-4f95-b47d-8a8f9a89a937"
+                    apikey: APIConstants.apikey
                 )
                 
                 print("Fetching station list...")
